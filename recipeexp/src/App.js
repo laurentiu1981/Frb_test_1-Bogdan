@@ -4,7 +4,6 @@ import getRoutes from "./routes/routesObject";
 
 function App(){
   const routes = getRoutes();
-  console.log(routes);
   return (
     <Router>
       <Routes>

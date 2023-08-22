@@ -19,7 +19,7 @@ const getRoutes = () => ({
   bookmarks: {
     title: 'Bookmarks',
     path: '/bookmarks',
-    layout: TopBarLayout,
+    layout: BasicLayout,
     element: BookmarksPage,
   },
 });
