@@ -5,12 +5,11 @@ import Button from "../Button";
 Rating.propTypes = {
   score: PropTypes.number,
   onRate: PropTypes.func,
-  onAdd: PropTypes.func,
 };
 Rating.defaultProps = {
   score: 0,
 };
-function Rating({score,onRate,onAdd}){
+function Rating({score,onRate}){
 
   return <div className="flex flex-col m-auto w-[16rem]">
 
@@ -35,7 +34,6 @@ function Rating({score,onRate,onAdd}){
           color2={'#ffd700'} />
       </div>
     </div>
-    <Button variation={"primary"} onClick={onAdd}>+ Add to Favorites</Button>
   </div>;
 }
 export default Rating;

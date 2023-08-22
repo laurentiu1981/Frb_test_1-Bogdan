@@ -24,12 +24,12 @@ function Button({ children, isLoading, type, variation, rounded, outline, classN
   const isWarning = variation === 'warning';
   const isDanger = variation === 'danger';
   const classes = classNames(className, 'px-3 py-1.5 border flex items-center  justify-center', {
-    'border-amber-950 bg-amber-950 text-white': isPrimary,
+    'border-amber-800 bg-amber-800 text-white': isPrimary,
     'border-gray-900 bg-gray-900 text-white': isSecondary,
     'border-green-500 bg-green-500 text-white': isSuccess,
     'border-yellow-400 bg-yellow-400 text-white': isWarning,
     'border-red-500 bg-red-500 text-white': isDanger,
-    'rounded-full': rounded,
+    'rounded': rounded,
     'bg-white': outline,
     'text-blue-500': outline && isPrimary,
     'text-gray-900': outline && isSecondary,
